@@ -1,6 +1,10 @@
 This repository contains all the code examples from the book "The Reasoned
-Schemer." The Reasoned Schemer implements a logic programming language in
-Scheme that is similar to Prolog.
+Schemer." The goal of the book is to show the beauty of relational
+programming. The authors of the book believe that it is natural to extend
+functional programming to relational programming. They demonstrate this by
+extending Scheme with a few new constructs, thereby combining the benefits of
+both styles. This extension also captures the essence of Prolog, the most
+well-known logic programming language.
 
 If you're interested, get the book from Amazon: http://bit.ly/89tulL
 
@@ -15,20 +19,50 @@ His blog is at http://www.catonmat.net  --  good coders code, great reuse.
 ------------------------------------------------------------------------------
 
 Table of contents:
+    [01] Chapter  1: Playthings
+         01-playtings.ss
     ...
-    I'll start adding chapters after I read the book (I am currently at
-    Chapter 6) and implement the language used in the book myself.
-
-    Otherwise, if I just rewrote the examples, I would not be 100% they
-    work as described in the book.
+    work in progress, adding new chapters every once in a while
 
 
-[01]-Chapter-1----------------------------------------------------------------
+[01]-Chapter-1-Playtings------------------------------------------------------
 
-See ... file for code examples.
+See 01-playtings.ss file for code examples.
 
-Chapter 1 ...
+Chapter 1 introduces the basic constructs of relational programming, they are
+the goals #s succeed and #u fail, the fresh variables, the operators ==, fresh
+and conde.
 
+The laws of operators fresh, == and conde are postulated:
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The law of fresh:                                                          |
+|                                                                            |
+| If x is fresh, then (== v x) succeeds and associates x with v.             |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The law of ==:                                                             |
+|                                                                            |
+| (== v w) is the same as (== w v).                                          |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+.----------------------------------------------------------------------------.
+|                                                                            |
+| The law of conde:                                                          |
+|                                                                            |
+| To get more values from conde, pretend that the successful conde line has  |
+| failed, refreshing all variables that got an association from that line.   |
+|                                                                            |
+'----------------------------------------------------------------------------'
+
+After you have read the chapter,
+
+              go make yourself a peanut butter and jam sandwich!
 
 ------------------------------------------------------------------------------
 
