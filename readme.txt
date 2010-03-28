@@ -8,8 +8,10 @@ well-known logic programming language.
 
 If you're interested, get the book from Amazon: http://bit.ly/89tulL
 
-This book assumes that you know basics of Scheme. The book can also be viewed
-as the 3rd book after "The Little Schemer" and "The Seasoned Schemer".
+This book assumes that you know the basics of Scheme. The Reasoned Schemer 
+can also be viewed as the 3rd book in the Schemer book series. The first two
+books are  "The Little Schemer" (http://github.com/pkrumins/the-little-schemer)
+and "The Seasoned Schemer" (http://github.com/pkrumins/the-seasoned-schemer).
 
 The code examples were copied (and completed where necessary) from
 "The Reasoned Schemer" by Peteris Krumins (peter@catonmat.net).
@@ -21,6 +23,8 @@ His blog is at http://www.catonmat.net  --  good coders code, great reuse.
 Table of contents:
     [01] Chapter  1: Playthings
          01-playtings.ss
+    [02] Chapter  2: Teaching Old Toys New Tricks
+         02-old-toys.ss
     ...
     work in progress, adding new chapters every once in a while
 
@@ -30,8 +34,8 @@ Table of contents:
 See 01-playtings.ss file for code examples.
 
 Chapter 1 introduces the basic constructs of relational programming, they are
-the goals #s succeed and #u fail, the fresh variables, the operators ==, fresh
-and conde.
+the goals #s for succeed and #u for fail, the fresh variables, the operators
+==, fresh and conde.
 
 The laws of operators fresh, == and conde are postulated:
 
@@ -63,6 +67,15 @@ The laws of operators fresh, == and conde are postulated:
 After you have read the chapter,
 
               go make yourself a peanut butter and jam sandwich!
+
+
+[02]-Chapter-2-Teaching-Old-Toys-New-Tricks-----------------------------------
+
+See 02-old-toys.ss file for code examples.
+
+Chapter 2 teaches the old tricks from The Little Schemer. They are caro, cdro,
+conso, nullo, eqo and pairo.
+
 
 ------------------------------------------------------------------------------
 
